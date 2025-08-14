@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ztna-server-api" />
+        <module name="ztna-server-types" />
+        <module name="ztna-server-trigger" />
+        <module name="ztna-server-app" />
+        <module name="ztna-server-domian" />
+        <module name="ztna-server-infrastructure" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-service" target="1.8" />
+      <module name="analysis-service" target="1.8" />
+      <module name="authorization-server" target="1.8" />
+      <module name="dlp-service" target="1.8" />
+      <module name="l4-service" target="1.8" />
+      <module name="policy-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ztna-server-api" options="-parameters" />
+      <module name="ztna-server-app" options="-parameters" />
+      <module name="ztna-server-domian" options="-parameters" />
+      <module name="ztna-server-infrastructure" options="-parameters" />
+      <module name="ztna-server-trigger" options="-parameters" />
+      <module name="ztna-server-types" options="-parameters" />
+    </option>
+  </component>
+</project>
